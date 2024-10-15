@@ -13,6 +13,7 @@ import java.util.Enumeration;
 
 // 다른곳에서 처리하라는 요청이 forward
 // forward는 url 이 변하지는 않기에 기존의 에러코드인 404 로 찍혀있는거싱다.
+
 @WebServlet("/showErrorPage")
 public class ExceptionHandlerServlet extends HttpServlet {
 
@@ -20,6 +21,8 @@ public class ExceptionHandlerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 // 요청을 다른 서블릿으로 넘겨서 처리하는 방식 - forward / 주소가 바뀌지 않는 방식
+        // Enumeration 인터페이스는 객체들의 집합에서 각각의 객체들을 한순간에 하나씩
+        // 처리할 수 있는 메소드를 제공하는 컬렉션이다..
         Enumeration<String> attrName = req.getAttributeNames();
         while (attrName.hasMoreElements()) {
             System.out.println(attrName.nextElement());

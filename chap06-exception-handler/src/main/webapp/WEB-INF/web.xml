@@ -13,3 +13,7 @@
         <location>/showErrorPage</location>
     </error-page>
 </web-app>
+
+<!--서블릿을 작성했다면 해당 서블릿을 사용자가 요청한 경로와 맵핑 시켜줘야한다..
+그래야 브라우저에서 해당 URL 로 HTTP 요청을 할 때, WAS 가 맵핑된 정보를 읽어서 해당 서블릿으로
+  요청을 전달해줄 수 있다..-->
