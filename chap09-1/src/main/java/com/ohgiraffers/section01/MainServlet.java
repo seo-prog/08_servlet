@@ -16,11 +16,11 @@ public class MainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String name = req.getParameter("name");
+        String userId = req.getParameter("userId");
 
         PrintWriter out = resp.getWriter();
-        out.println("<h1> 환영합니다 ! " + name + "님 !! </h1>");
-        resp.sendRedirect("/main.jsp");
+        out.println("<h1> 환영합니다 ! " + userId + "님 !! </h1>");
+        resp.sendRedirect("main.jsp");
 
 
     }

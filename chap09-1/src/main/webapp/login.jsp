@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="first/login" method="post">
+<form action="login" method="post">
     <table>
 
     <h1>로그인 페이지</h1>
@@ -16,6 +16,7 @@
 
     </table>
 </form>
+<a href="sign.jsp">가입하기 !</a>
 
 </body>
 </html>

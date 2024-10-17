@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form action="/register" method="post">
+    <form action="register" method="post">
     <table>
     <input type='text' name='userID' placeholder="아이디" required/>
     <input type='password' name='password' placeholder="비밀번호" required/>
@@ -16,7 +16,7 @@
 </table>
     </form>
 
-<a href="login.jsp">로그인 화면</a>
+<a href="login.jsp">로그인 하기</a>
 </body>
 </html>
 

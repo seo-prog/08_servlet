@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import javax.xml.crypto.dsig.spec.XPathType;
 import java.io.IOException;
 
-@WebFilter("/first/*")
+@WebFilter("/register/*")
 public class Webfilter implements Filter {
 
     @Override
